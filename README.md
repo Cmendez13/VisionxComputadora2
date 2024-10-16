@@ -1,5 +1,8 @@
 # VisionxComputadora2
 
+Carlos Méndez
+Carlos Villalobos
+
 En este repositorio se encuentra el trabajo práctico realizado para la asignatura de Visión por Computadora 2.
 
 El dataset seleccionado para este trabajo fue el siguiente:
