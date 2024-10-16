@@ -45,3 +45,11 @@ Para ello hubo considerar algunos puntos para la resolución
 > Balanceo entre clases usando técnicas de RandomSampler (en particular **WeightedRandomSampler** - from torch.utils.data)
 
 Para la implementación asociada se planteo una arquitectura de red convolucional
+
+<h1>Definición de la red convolucional</h1>
+
+Se planteo una red con la siguiente arquitectura con cuatro capas de convolución:
+
+<img src=/images/arquitectura.png alt="Muestra" width="300" height="200">
+
+
