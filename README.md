@@ -11,12 +11,12 @@ Este dataset contiene 6,899 imagenes de 8 distintas clases (que proviene de dist
 Las clases incluidas en el mencionado dataset son: airplane, car, cat, dog, flower, fruit, motorbike, person.
 
 
-<img src=/images/muestra_imagenes.png alt="Muestra" width="300" height="200">
+<img src=/images/muestra_imagenes.png alt="Muestra" width="300" height="300">
 <li> Dimensiones heterogeneas</li> 
 
 Luego de inspeccionar la data se pudo evidenciar que la dimensión de las imagenes eran bastante dispares entre clases.
 
-<img src=/images/scatterplot_dimensiones.png alt="Scatter Dimensiones" width="300" height="200">
+<img src=/images/scatterplot_dimensiones.png alt="Scatter Dimensiones" width="300" height="300">
 
 <li> Desbalanceo de clases</li> 
 
@@ -43,6 +43,8 @@ Para ello hubo considerar algunos puntos para la resolución
 > Resize de las imagenes para homegeneizar las dimensiones de las imagenes
 > 
 > Balanceo entre clases usando técnicas de RandomSampler (en particular **WeightedRandomSampler** - from torch.utils.data)
+>
+> Se realizaron algunas transformaciones para mejorar el desempeño del modelo y aumentar la data
 
 Para la implementación asociada se planteo una arquitectura de red convolucional
 
@@ -51,5 +53,33 @@ Para la implementación asociada se planteo una arquitectura de red convoluciona
 Se planteo una red con la siguiente arquitectura con cuatro capas de convolución:
 
 <img src=/images/arquitectura.png alt="Muestra" width="208" height="692">
+
+<h1> Puntos de mejora </h1>
+
+<li> Un posible punto de mejora refiere a considerar el tamaño de la imagen en el resize como un hiperparámetro, para nuestro caso realizamos varias pruebas [(224, 224), (256,256), (300, 300)]   </li>
+
+
+Estas selecciones fueron hechas teniendo en cuenta el costo computacional, sin embargo, parecia razonable evaluar un criterio más estadístico (Un histograma del promedio de pixels o la distribución promedio de las imagenes como criterio).
+
+<li> Optimización del uso de las transformaciones de Pytorch</li>
+
+
+Inicialmente no se hicieron transformaciones y luego se fueron agregando algunas lo que se tradujo en mejoras en el **accuracy**.  Agregar otro tipo de transformaciones puede ser testeadas.
+
+<li> Mayor profundidad a la red </li>
+
+
+<h1> Transfer Learning </h1>
+
+Se realizó una prueba con arquitectura pre-entrenada - **resnet** - donde se evidenciaron mejores resultados
+
+La selección de la arquitectura se erige como un punto de especial atención para la solución de problemas de **clasificación**.
+
+
+
+
+
+
+
 
 
