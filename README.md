@@ -1,10 +1,11 @@
 # VisionxComputadora2
 
-Integrantes:
+# Integrantes:
 
 Carlos Méndez
 
 Carlos Villalobos
+
 
 En este repositorio se encuentra el trabajo práctico realizado para la asignatura de Visión por Computadora 2.
 
