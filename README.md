@@ -1,5 +1,6 @@
 # VisionxComputadora2
 
+Integrantes:
 Carlos Méndez
 
 Carlos Villalobos
