@@ -6,6 +6,7 @@ Carlos Méndez
 
 Carlos Villalobos
 
+# Descripción:
 
 En este repositorio se encuentra el trabajo práctico realizado para la asignatura de Visión por Computadora 2.
 
