@@ -41,14 +41,7 @@ Para ello hubo considerar algunos puntos para la resolución
 
 > [!NOTE]
 > Resize de las imagenes para homegeneizar las dimensiones de las imagenes
-> Balanceo entre clases usando técnicas de RandomSampler ()
+> 
+> Balanceo entre clases usando técnicas de RandomSampler (en particular **WeightedRandomSampler** - from torch.utils.data)
 
-
-
-
-
-
-
-
-
-El problema a solucionar es un problema de clasificación
+Para la implementación asociada se planteo una arquitectura de red convolucional
