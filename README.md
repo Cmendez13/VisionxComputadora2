@@ -11,7 +11,7 @@ Este dataset contiene 6,899 imagenes de 8 distintas clases (que proviene de dist
 Las clases incluidas en el mencionado dataset son: airplane, car, cat, dog, flower, fruit, motorbike, person.
 
 
-<img src=/images/muestra_imagenes.png alt="Muestra" width="300" height="200">
+<img src=/images/muestra_imagenes.png alt="Muestra" width="208" height="692">
 <li> Dimensiones heterogeneas</li> 
 
 Luego de inspeccionar la data se pudo evidenciar que la dimensión de las imagenes eran bastante dispares entre clases.
